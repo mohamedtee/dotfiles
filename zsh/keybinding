@@ -1,0 +1,24 @@
+#!/bin/zsh
+
+# Ctrl+e			edit command in vim
+bindkey 	'^e' 		edit-command-line
+# Home
+bindkey 	'^[[H' 		beginning-of-line
+# End
+bindkey 	'^[[4~' 	end-of-line
+# Insert
+bindkey 	'^[[4h' 	overwrite-mode
+# Up
+bindkey 	'^[[A'		up-line-or-beginning-search
+# Down
+bindkey 	'^[[B'		down-line-or-beginning-search
+# PageUp
+bindkey 	'^[[5~'		beginning-of-buffer-or-history
+# PageDown
+bindkey 	'^[[6~'		end-of-buffer-or-history
+# Delete
+bindkey 	'^[[P'		delete-char
+# Ctrl+<Left>
+bindkey 	'^[[1;5D'	backward-word
+# Ctrl+<Right>
+bindkey 	'^[[1;5C'	forward-word

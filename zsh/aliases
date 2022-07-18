@@ -1,0 +1,47 @@
+#!/bin/zsh
+
+# No need to type sudo
+for cmd in 		\
+	mount 		\
+	umount 		\
+	rc-service 	\
+	rc-sstat 	\
+	rc-status 	\
+	rc-update 	\
+	pacman 		\
+	shutdown 	\
+	poweroff 	\
+	reboot 		
+do	alias $cmd="sudo $cmd"
+done; unset cmd
+
+# Common commands
+alias \
+	ka="killall" \
+	sdn="shutdown -h now" \
+	e="$EDITOR" \
+	v="$EDITOR" \
+	p="pacman" \
+	za="zathura" \
+	x="startx $XINITRC" \
+	fd="find" \
+	startx="x" \
+	cd="z" \
+	ci="zi" \
+	".."="z .." \
+	"-"="z -"
+# Verbosity and and common settings
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	mkd="mkdir -pv"
+
+# Colorize commands
+alias \
+	ls="ls -A1 --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ip="ip -color=auto"
+
+alias config='/usr/bin/git --git-dir=$HOME/.config/ --work-tree=$HOME'
