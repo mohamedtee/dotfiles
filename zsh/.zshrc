@@ -40,9 +40,11 @@ zle -N 	edit-command-line
 [ -f "$ZDOTDIR/aliases" ] && source "$ZDOTDIR/aliases"
 
 # Load auto suggestions
-autosuggestions="$HOME/git/zsh/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh"
+# https://github.com/zsh-users/zsh-autosuggestions
+autosuggestions="$HOME/git/zsh-users/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh"
 [ -f "$autosuggestions" ] && source "$autosuggestions"
 
 # Load syntax highlighting
-syntax_highlighting="$HOME/git/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh"
+# https://github.com/zsh-users/zsh-syntax-highlighting
+syntax_highlighting="$HOME/git/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh"
 [ -f "$syntax_highlighting" ] && source "$syntax_highlighting" 
